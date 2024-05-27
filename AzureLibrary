@@ -9,7 +9,6 @@ local tweenservice = game:GetService("TweenService")
 local textservice = game:GetService("TextService")
 local coregui = game:GetService("CoreGui")
 local httpservice = game:GetService("HttpService")
-local startergui = game:GetService("StarterGui")
 
 local mouse = game:GetService("Players").LocalPlayer:GetMouse()
 
@@ -65,12 +64,6 @@ if library.theme.cursor then
 		library.cursor:Remove()
 	end
 end
-
-startergui:SetCore("SendNotification", {
-	Title = "Official discord:", 
-	Text = "discord.gg/azuremodded", 
-	Duration = 5
-})
 
 function library:CreateWindow(name, size, hidebutton)
 	local window = {}
